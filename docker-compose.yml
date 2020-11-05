@@ -1,0 +1,15 @@
+version: "2"
+
+networks:
+    default:
+        driver: bridge
+
+services:
+    mailhog:
+        build: ./mailhog
+        ports:
+            - "1025:1025"
+            - "8025:8025"
+        networks:
+            - default
+        restart: always
