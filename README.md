@@ -5,6 +5,7 @@ Your local smtp server
     git clone git@github.com:tiks-vincent-delafuente/mailhog-docker-compose.git mailhog
     cd mailhog 
     sudo docker-compose up -d
+
 In your laravel application .env
 
     MAIL_DRIVER=smtp
